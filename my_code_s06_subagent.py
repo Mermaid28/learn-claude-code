@@ -427,7 +427,7 @@ def agent_loop(messages:list):
             trigger_hooks("PostToolUse", block, output)  # s04: post hook
 
             # s05: reset nag counter when todo_write is called
-            if block.name == "toto_write":
+            if block.name == "todo_write":
                 rounds_since_todo = 0
 
             print(str(output[:200]))
